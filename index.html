@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            justify-content: center;
+            align-items: center;
+            height: absolute;
+        }
+        button
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div style="padding-top: 20px;">
+        <form action="CreateProduct" method="post">
+            <h4>Create Product</h4>
+            <label>Id:</label>
+            <input type="text" id="CreateId" name="CreateId">
+            <label>Name:</label>
+            <input type="text" id="CreateName" name="CreateName">
+            <label>Qty:</label>
+            <input type="text" id="CreateQty" name="CreateQty">
+            <label>Price:</label>
+            <input type="text" id="CreatePrice" name="CreatePrice">
+            <button type="submit">Create</button>
+        </form>
+    </div><br>
+<div style="padding-top: 10px;">
+    <form action="UpdateProduct" method="post">
+        <h4>Update Product</h4>
+        <label>Id:</label>
+        <input type="text" id="UpdateId" name="UpdateId">
+        <label>Name:</label>
+        <input type="text" id="UpdateName" name="UpdateName">
+        <label>Qty:</label>
+        <input type="text" id="UpdateQty" name="UpdateQty">
+        <label>Price:</label>
+        <input type="text" id="UpdateQty" name="UpdateQty">
+        <button type="submit">Update</button>
+    </form>
+</div><br>
+<div style="padding-top: 10px;">
+    <form action="DeleteProduct" method="post" >
+        <h4>Delete Product</h4>
+        <label>Delete Id:</label>
+        <input type="text" id="DeleteId" name="DeleteId">
+        <button type="submit">Delete</button>
+    </form><br>
+</div>
+<div style="padding-top: 10px;">
+    <form action="ViewProduct" method="post">
+        <h4>View Products</h4>
+        <button type="submit">Retrieve</button>
+    </form>
+</div>
+</body>
+</html>
